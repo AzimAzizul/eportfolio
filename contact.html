@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact · Azim Azizul Portfolio</title>
+  <meta name="description" content="Send me a message about internships, jobs or projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="container nav-bar" aria-label="Main">
+      <a class="brand" href="index.html"><span class="brand-badge" aria-hidden="true">&lt;/&gt;</span><span>Azim Azizul</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="nav-toggle-label">Menu</span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academic.html">Academic</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="qualities.html">Qualities</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+    </nav>
+
+    <header class="page-head">
+      <h1>Contact me</h1>
+      <p>Have an internship, job or project in mind? Send a message and I will reply within 2 working days.</p>
+    </header>
+
+    <section class="section contact-grid">
+      <div class="card">
+        <div class="alert-success" id="form-success" role="status" tabindex="-1" hidden>
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+          <div>
+            <strong>Message ready, thank you <span data-name></span>!</strong>
+            <p>This is a demo form, so nothing was actually sent. Please email me directly for now.</p>
+          </div>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <p class="muted">Fields marked <span class="req">*</span> are required.</p>
+
+          <div class="field">
+            <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err">
+            <p class="error-msg" id="name-err">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg><span class="error-text"></span>
+            </p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="email-err">
+            <p class="error-msg" id="email-err">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg><span class="error-text"></span>
+            </p>
+          </div>
+
+          <div class="field">
+            <label for="subject">What is this about? <span class="req" aria-hidden="true">*</span></label>
+            <select id="subject" name="subject" required aria-describedby="subject-err">
+              <option value="">Choose one…</option>
+              <option>Internship opportunity</option>
+              <option>Job opportunity</option>
+              <option>Project collaboration</option>
+              <option>Question about my work</option>
+              <option>Other</option>
+            </select>
+            <p class="error-msg" id="subject-err">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg><span class="error-text"></span>
+            </p>
+          </div>
+
+          <div class="field">
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" required maxlength="1000" aria-describedby="message-err message-hint"></textarea>
+            <div class="field-hint" id="message-hint"><span>At least 10 characters.</span><span id="message-count">0 / 10 minimum</span></div>
+            <p class="error-msg" id="message-err">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg><span class="error-text"></span>
+            </p>
+          </div>
+
+          <button class="btn btn-primary" type="submit" disabled>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>Send message
+          </button>
+          <p class="form-note">The Send button turns on once every field is filled in correctly.</p>
+        </form>
+      </div>
+
+      <aside class="card contact-side" aria-labelledby="other-ways">
+        <h2 id="other-ways">Other ways to reach me</h2>
+        <ul class="info-list">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <a href="mailto:azimazizul050203@gmail.com">azimazizul050203@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>Seremban, Negeri Sembilan, Malaysia</span>
+          </li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://github.com/AzimAzizul" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg>GitHub · AzimAzizul</a></li>
+          <li><a href="https://www.linkedin.com/in/azim-azizul-b42a0127b/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn · azim-azizul</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <nav class="page-nav" aria-label="Page">
+      <a href="qualities.html" class="prev"><small>← Previous</small>Qualities &amp; skills</a>
+      <a href="index.html" class="next"><small>Back to start →</small>Home</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> <span>Azim Azizul</span> · <span>E-Portfolio</span></p>
+      <ul class="social">
+        <li><a href="https://github.com/AzimAzizul" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.7c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></svg>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/azim-azizul-b42a0127b/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a></li>
+        <li><a href="contact.html">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

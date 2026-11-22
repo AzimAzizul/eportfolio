@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640" role="img" aria-label="UTeM Certificate placeholder">
+<rect width="900" height="640" fill="#FFFFFF"/>
+<circle cx="765.0" cy="128.0" r="160.0" fill="#8ECAE6" opacity="0.6"/>
+<circle cx="90.0" cy="576.0" r="115.19999999999999" fill="#FFB703" opacity="0.35"/>
+<text x="50%" y="47%" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="600" fill="#023047">UTeM Certificate</text>
+<text x="50%" y="58%" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" fill="#3E5C6E">Placeholder – upload scan with IC number blacked out</text>
+</svg>
