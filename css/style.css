@@ -227,7 +227,10 @@ dialog::backdrop { background: rgba(2, 48, 71, 0.8); }
 .gallery-thumbs button { padding: 0; border: 3px solid transparent; border-radius: var(--radius-sm); background: none; cursor: pointer; width: 110px; overflow: hidden; }
 .gallery-thumbs button[aria-current="true"] { border-color: var(--accent); }
 .gallery-thumbs img { aspect-ratio: 16 / 10; object-fit: contain; background: var(--bg-soft); }
-.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 32px; }
+/* fixed gap before buttons; last-block margins vary (p vs tags), so zero them */
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px; margin-bottom: 28px; }
+.detail-grid p:last-child { margin-bottom: 0; }
+.detail-grid ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
 .detail-grid h3 { font-size: 1rem; margin-bottom: 4px; }
 .empty-state { padding: 40px; text-align: center; }
 
